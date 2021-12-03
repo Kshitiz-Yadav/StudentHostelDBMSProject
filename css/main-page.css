@@ -1,0 +1,17 @@
+.left-div{
+  padding:5% 3%;
+  text-align: center;
+}
+.hostel-image{
+  width:70%;
+}
+.right-div{
+    padding:5% 3%;
+    background-color: #fef8dd;
+}
+.try{
+    padding: 10% 5%;
+}
+body, html{
+  overflow: hidden;
+}
