@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="overflow: hidden;">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/main-page.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Nunito:wght@400;600;700&family=Outfit:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="font-family: 'Outfit', sans-serif;">
+    <div class="row">
+        <div class="col-lg-6 left-div">
+            <img src="images/hostel.jpg" class="hostel-image" alt="">
+            <h1 style="font-size:52px;">Hostel Management System</h1>
+        </div>
+        <div class="col-lg-6 right-div" style="padding-top: 15px;">
+
+            <div class="row" style="width:100%; margin-top:40px; text-align:center;">
+                <h3>Find Student Using Roll Number : </h3>
+                <div class="row" style="padding-left:8%; margin-bottom:20px;">
+                    <form class="" action="display_table.php" method="get" style="padding:4% 4%; text-align:left;">
+                        <input type="number" name="numToFind" value="" placeholder="Enter Roll Number"
+                            style="display:inline-block; padding:5px; border-radius:5px; width:35%; margin-right:10px;">
+                        <input type="text" name="nameToFind" value="" placeholder="Enter Student's First Name"
+                            style="display:inline-block; padding:5px; border-radius:5px; width:35%; margin-right:10px;">
+                        <button type="submit" name="findRNum"
+                            style="width:20%; padding:5px; border-radius:5px; background-color:#E8DCBE;"
+                            style="display:inline-block;">Find</button>
+                    </form>
+                </div>
+
+                <h3>Find Student Residing in: </h3>
+                <div class="row" style="padding-left:8%;">
+                    <form class="" action="display_table.php" method="get" style="padding:4% 4%; text-align:left;">
+                        <input type="number" name="roomID" value="" placeholder="Enter Room ID"
+                            style="display:inline-block; padding:5px; border-radius:5px; width:35%; margin-right:10px;">
+                        <input type="text" name="hostelName" value="" placeholder="Enter Hostel Name"
+                            style="display:inline-block; padding:5px; border-radius:5px; width:35%; margin-right:10px;">
+                        <button type="submit" name="findStudent"
+                            style="width:20%; padding:5px; border-radius:5px; background-color:#E8DCBE;"
+                            style="display:inline-block;">Find</button>
+                    </form>
+                </div>
+
+                <h3>Show students of a Branch: </h3>
+                <div class="row" style="padding-left:8%;">
+                    <form class="" action="display_table.php" method="get" style="padding:4% 4%; text-align:left;">
+                        <select name="branch" id="" placeholder="Branch"
+                            style="display:inline-block; padding:5px; border-radius:5px; width:35%; margin-right:10px;">
+                            <option value="NULL">Branch</option>
+                            <option value="IT">IT</option>
+                            <option value="CSE">CSE</option>
+                            <option value="ME">ME</option>
+                            <option value="IPE">IPE</option>
+                            <option value="CE">CE</option>
+                        </select>
+                        <input type="number" name="sem" value="" placeholder="Enter Semester"
+                            style="display:inline-block; padding:5px; border-radius:5px; width:35%; margin-right:10px;">
+                        <button type="submit" name="showBranch"
+                            style="width:20%; padding:5px; border-radius:5px; background-color:#E8DCBE;"
+                            style="display:inline-block;">Find</button>
+                    </form>
+                </div>
+
+                <div class="row" style="width:100%;">
+                    <div class="col-lg-6">
+                        <form class="" action="display_table.php" method="get"
+                            style="padding:4% 5% 4% 15%; text-align:center; width:100%;">
+                            <button type="submit" name="ShowStudent"
+                                style="width:90%; padding:10px; border-radius:5px; background-color:#E8DCBE;">Show All
+                                Student Details</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="" action="display_table.php" method="get"
+                            style="padding:4% 5% 4% 10%; text-align:center; width:100%;">
+                            <button type="submit" name="ShowHostel"
+                                style="width:90%; padding:10px; border-radius:5px; background-color:#E8DCBE;">Show All
+                                Hostel Details</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row" style="width:100%;">
+                    <div class="col-lg-6">
+                        <form class="" action="display_table.php" method="get"
+                            style="padding:4% 5% 4% 15%; text-align:center; width:100%;">
+                            <button type="submit" name="ShowRoom"
+                                style="width:90%; padding:10px; border-radius:5px; background-color:#E8DCBE;">Show All
+                                Room Details</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="" action="update-student.php" method="post"
+                            style="padding:4% 5% 4% 10%; text-align:center; width:100%;">
+                            <button type="submit" name="button"
+                                style="width:90%; padding:10px; border-radius:5px; background-color:#E8DCBE;">Update
+                                Student Details</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row" style="width:100%;">
+                    <div class="col-lg-6">
+                        <form class="" action="er-diagram.html" method="get"
+                            style="padding:4% 5% 4% 15%; text-align:center; width:100%;">
+                            <button type="submit" name=""
+                                style="width:90%; padding:10px; border-radius:5px; background-color:#E8DCBE;">Show ER Diagram</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="" action="custom_query.html" method="get"
+                            style="padding:4% 5% 4% 10%; text-align:center; width:100%;">
+                            <button type="submit" name=""
+                                style="width:90%; padding:10px; border-radius:5px; background-color:#E8DCBE;">Run Custom
+                                Queries</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
